@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -100,5 +102,25 @@ textarea {
 
 .list li:first-child {
     border-top: 1px solid #ccc;
+}
+
+.row{
+    padding-bottom:.5rem;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear: both;
+}
+.row>.col-4{
+    float:left;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #FF5722;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: .40rem;
 }
 

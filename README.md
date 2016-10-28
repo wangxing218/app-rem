@@ -10,6 +10,7 @@
 框架将为你自动适配不同的移动设备。
 
 ##[点击查看demo](https://wangxing218.github.io/app-rem/test/demo.html)
+![image](https://wangxing218.github.io/app-rem/test/er.png)
 
 ##使用方法
 第一步： 在头部引用rem.js（仅10几行代码）
