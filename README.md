@@ -13,26 +13,26 @@
 
 ##使用方法
 第一步： 在头部引用rem.js（仅10几行代码）
-    ```html
-    <script src="rem.js"></script>
-    ```
+```html
+<script src="rem.js"></script>
+```
 第二步： 按设计稿和标准尺寸设置html参数（以iphone6为例）
-    ```html
-    <html data-width="750" data-dpr="2">
-    ```
+```html
+<html data-width="750" data-dpr="2">
+```
     > data-width为设计稿的真实尺寸，data-dpr为设计尺寸相对于物理机尺寸的倍数，此处为 750 / 375
     > 两个参数都有默认值，也可以不用设置，直接在rem.js里修改。
 
 第三步： 按设计稿编写您的css代码。
-    ```css
-    html {
-        font-size: 100px;
-    }
-    header{
-        height: .88rem;
-        line-height: .88rem;
-    }
-    ```
+```css
+html {
+    font-size: 100px;
+}
+header{
+    height: .88rem;
+    line-height: .88rem;
+}
+```
     > 这里给html设置字体大小为100px,是为了让页面渲染得更顺畅，rem.js原理利用就是css中rem单位的特性。
 其他元素在设计图中是多少px，就将数据 除100得到相应的rem值。
 
