@@ -1,8 +1,9 @@
 + function(win, doc) {
-    "use strict";
+    'use strict';
+    var options = { width: 750, dpr: 2 };
     var html = doc.querySelector('html'),
-        width = html.getAttribute('data-width') || 750,
-        dpr = html.getAttribute('data-dpr') || 2,
+        width = html.getAttribute('data-width') || options.width,
+        dpr = html.getAttribute('data-dpr') || options.dpr,
         viewPort = doc.querySelector('meta[name="viewport"]'),
         rotate = win.onorientationchange ? 'orientationchange' : 'resize';
 

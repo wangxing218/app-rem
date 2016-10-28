@@ -38,7 +38,6 @@ html {
 其他元素在设计图中是多少px，就将数据 除100得到相应的rem值。
 
 
-
 ##作者
 ###网站： <a href="http://www.boyxing.com/" target="_blank">www.boyxing.com 星仔博客</a>
 ### QQ ： <a href="http://wpa.qq.com/msgrd?v=3&uin=1263996779&site=qq&menu=yes" target="_blank">1263996779</a>

@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 * {
     margin: 0;
     padding: 0;
@@ -103,16 +102,18 @@ textarea {
     border-top: 1px solid #ccc;
 }
 
-.row{
-    padding-bottom:.5rem;
+.row {
+    padding-bottom: .5rem;
 }
-.row:after{
-    content:"";
-    display:table;
+
+.row:after {
+    content: "";
+    display: table;
     clear: both;
 }
-.row>.col-4{
-    float:left;
+
+.row>.col-4 {
+    float: left;
     width: 2rem;
     height: 2rem;
     line-height: 2rem;
@@ -122,4 +123,3 @@ textarea {
     text-align: center;
     font-size: .40rem;
 }
-
