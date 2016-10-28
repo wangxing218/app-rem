@@ -2,7 +2,7 @@
 做为一名移动端的前端开发者，是否遇到过这样的问题：
 + 无法将设计稿一比一的还原成demo；
 + 每次取得的像素尺寸，都除以2或者除以3；
-+ 每次设置背景都得设置background-size;
++ 每次设置背景都得设置background-size；
 + 在不同尺寸的移动设备上总会有些地方走形；
 + 更多...
 
@@ -13,7 +13,7 @@
 ![image](https://wangxing218.github.io/app-rem/test/er.png)
 
 ##使用方法
-第一步： 在头部引用rem.js（仅10几行代码）
+第一步： 在头部引用rem.js
 ```html
 <script src="rem.js"></script>
 ```
