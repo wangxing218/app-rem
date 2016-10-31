@@ -21,7 +21,7 @@
 ```html
 <html data-width="750" data-dpr="2">
 ```
-> data-width为设计稿的真实尺寸，data-dpr为设图像素比，此处为 750 / 375
+> data-width为设计稿的真实尺寸，data-dpr为像素比，此处为 750 / 375
 > 两个参数都有默认值，也可以不用设置，直接在rem.js里修改。
 
 第三步： 按设计稿编写您的css代码。
