@@ -33,6 +33,9 @@ html {
     height: .88rem;
     line-height: .88rem;
 }
+div,p{
+	max-height: 100rem;
+}
 ```
 > 这里给html设置字体大小为100px,是为了让页面渲染得更顺畅，并不是非必要的。rem.js原理利用就是css中rem单位的特性。
 其他元素在设计图中是多少px，就将数据 除100得到相应的rem值。
