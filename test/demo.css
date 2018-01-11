@@ -9,6 +9,9 @@
 html {
     font-size: 100px;
 }
+div,p{
+    max-height: 1000rem;
+}
 
 body {
     font-size: .28rem;
