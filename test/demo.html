@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>App-rem By WangXing</title>
+    <script src="../rem.js"></script>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <header class="header"><h1>应用标题</h1></header>
+    <div class="wrap article">
+        <h2 class="article-title">文章标题</h2>
+        <div class="article-content">
+            <p>尝试使用Chrome浏览器，按f12键，打开手机模拟器，切换不同宽度看看！</p>
+            <p><img src="img.jpg" style="width:7.1rem;"></p>
+            <p>来一个列表，看看神奇的半像素极细分隔线</p>
+            <ul class="list">
+                <li>无法将设计稿一比一的还原成demo；</li>
+                <li>每次取得的像素尺寸，都除以2或者除以3；</li>
+                <li>每次设置背景都得设置background-size；</li>
+                <li>在不同尺寸的移动设备上总会有些地方走形；</li>
+                <li>更多...</li>
+            </ul>
+            <p>在实际使用中，rem和px可以混合使用，比如按标准规范，头部的标题栏为88px，就可以不使用rem单位！</p>
+            <p></p>
+            <p>来一段rem的布局</p>
+            <div class="row">
+                <div class="col-4">
+                    2rem
+                </div>
+                <div class="col-4" style="width:3rem;background-color: #FF9800;">
+                    3.1rem
+                </div>
+                <div class="col-4" style="background-color: #FFC107;">
+                    2rem
+                </div>
+            </div>
+            <p>怎么样，不用百分比，固定的宽度也能实现删格化布局！</p>
+        </div>
+    </div>
+    <footer class="footer">应用底部</footer>
+</body>
+
+</html>
