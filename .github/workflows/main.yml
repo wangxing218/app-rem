@@ -2,6 +2,11 @@ name: test-publish
 
 on:
   workflow_dispatch:
+    inputs:
+      mark:
+        description: '发布备注'
+        required: true
+        default: ''
 
 jobs:
   build:
@@ -11,9 +16,16 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-      - run: pwd
-      - run: node -v
-      - run: npm -v
-      - run: ls
-      - run: npm config get registry
+      - run: |
+          pwd
+          ls
+          cd ..
+          ls
+          node -v
+          npm -v
+          npm config get registry
+      - run: | 
+          echo "Marks ${{ github.event.inputs.mark }}!"
+          echo "你妹的，可以子"
+        
 
