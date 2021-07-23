@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 14
       - run: |
-          echo 发布说明: ${{ github.event.inputs.mark }}
+          echo "发布说明: ${{ github.event.inputs.mark }}"
       - run: |
           pwd
           ls
@@ -38,13 +38,8 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: |
-          npn -v
-          pwd
-          echo ------
-          ls
-          echo ----
-          npm token list --json
-      - env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+        env:
+            NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      - run: ls
+      - run: npm token list --json
 
