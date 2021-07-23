@@ -1,4 +1,4 @@
-name: test-publish
+name: 构建发布任务
 
 on:
   workflow_dispatch:
@@ -39,7 +39,12 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       - run: |
+          npn -v
+          pwd
+          echo ------
+          ls
+          echo ----
           npm token list --json
       - env:
-          NPM_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
